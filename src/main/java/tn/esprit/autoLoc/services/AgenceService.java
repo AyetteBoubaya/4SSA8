@@ -32,7 +32,6 @@ public class AgenceService implements IAgenceService{
 
     @Override
     public Agence modifierAgence(Agence agence) {
-        agenceRepository.save(agence);
-        return null;
+        return agenceRepository.save(agence);
     }
 }

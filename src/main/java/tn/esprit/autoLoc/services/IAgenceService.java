@@ -11,5 +11,4 @@ public interface IAgenceService {
     List<Agence> recupererAgence();
     Agence modifierAgence(Agence agence);
 
-
 }
