@@ -10,6 +10,13 @@ L'objectif est de mettre en pratique les notions étudiées durant le semestre.
 Chaque séance permet d'ajouter une nouvelle fonctionnalité ou une nouvelle
 notion d'architecture au projet.
 
+## Modèle du système
+
+Le modèle présente les principales entités du système AutoLoc ainsi que
+leurs relations :
+
+![Modèle EA AutoLoc](./docs/autoLoc-model.png)
+
 ## Technologies
 
 - Java
