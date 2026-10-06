@@ -7,6 +7,7 @@ import tn.esprit.autoLoc.entities.enums.ModePaiement;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Entity
 @Table(name = "Paiment")
@@ -19,4 +20,7 @@ public class Paiement {
     private BigDecimal montant;
     private LocalDate datePaiment;
     private ModePaiement modePaiement;
+
+    @ManyToOne
+    private Contrat contrat;
 }

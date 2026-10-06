@@ -1,10 +1,7 @@
 package tn.esprit.autoLoc.entities;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 import tn.esprit.autoLoc.entities.enums.RoleEmploye;
 
@@ -18,4 +15,7 @@ public class Employe {
     private String nom;
     private String prenom;
     private RoleEmploye role;
+
+    @ManyToOne
+    private Agence agence;
 }
