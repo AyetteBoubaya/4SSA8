@@ -3,9 +3,9 @@ package tn.esprit.autoLoc.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.cglib.core.Local;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 @Entity
 @Table(name = "Client")
@@ -19,4 +19,8 @@ public class Client {
     private String telephone;
     private String numPermis;
     private LocalDate dateInscription;
+
+    @OneToMany(mappedBy = "clients", cascade = CascadeType.ALL)
+    private Set<Reservation> reservations;
+
 }

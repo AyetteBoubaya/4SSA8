@@ -16,4 +16,13 @@ public class Reservation {
     private LocalDate dateDebut;
     private LocalDate dateFin;
     private StatutReservation statut;
+
+    @ManyToOne
+    private Vehicule vehicule;
+
+    @ManyToOne
+    private Client client;
+
+    @OneToOne
+    private Contrat contrat;
 }
