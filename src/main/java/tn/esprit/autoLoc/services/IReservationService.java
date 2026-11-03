@@ -9,4 +9,7 @@ public interface IReservationService {
     void supprimerReservation(Long id);
     List<Reservation> recupererReservation();
     Reservation modifierReservation(Reservation reservation);
+    void desaffecterContratDeReservation(Long idReservation);
+
+
 }

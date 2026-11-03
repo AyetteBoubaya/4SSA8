@@ -10,5 +10,6 @@ public interface IAgenceService {
     void supprimerAgence(Long id);
     List<Agence> recupererAgence();
     Agence modifierAgence(Agence agence);
-
+    void affecterVehiculeAAgence(Long idVehicule, Long idAgence);
+    void desaffecterVehiculeDAgence(Long idVehicule);
 }

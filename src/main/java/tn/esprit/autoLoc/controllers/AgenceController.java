@@ -33,6 +33,9 @@ public class AgenceController {
         return agenceService.modifierAgence(agence);
     }
 
-
+    @PutMapping("/affecterVehiculeAAgence")
+    public void affecterVehiculeAAgence(@PathVariable Long idVehicule,@PathVariable Long idAgence){
+        agenceService.affecterVehiculeAAgence(idVehicule, idAgence);
+    }
 
 }

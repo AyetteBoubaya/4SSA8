@@ -33,4 +33,9 @@ public class ReservationService implements  IReservationService{
     public Reservation modifierReservation(Reservation reservation) {
         return reservationRepository.save(reservation);
     }
+
+    @Override
+    public void desaffecterContratDeReservation(Long idReservation) {
+
+    }
 }
