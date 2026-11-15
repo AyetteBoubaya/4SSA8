@@ -10,6 +10,6 @@ public interface IReservationService {
     List<Reservation> recupererReservation();
     Reservation modifierReservation(Reservation reservation);
     void desaffecterContratDeReservation(Long idReservation);
-
-
+    void affecterContratAReservation(Long idcontrat, Long idReservation);
+    void affecterClientAReservation(Long idClient, Long idReservation);
 }

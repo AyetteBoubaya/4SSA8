@@ -9,4 +9,5 @@ public interface IPaiemantService {
     void supprimerPaiment(Long id);
     List<Paiement> recupererPaiment();
     Paiement modifierPaiement(Paiement paiement);
+    void affecterPaiementAContrat(Long idPaiement, Long idContrat);
 }
